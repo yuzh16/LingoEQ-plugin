@@ -1,0 +1,64 @@
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+**/.DS_Store
+VERSION
+
+# It's nice to have the Builds folder exist, to remind us where it is
+Builds/*
+!Builds/.gitkeep
+
+# This should never exist
+Install/*
+
+# Running CTest makes a bunch o junk
+Testing
+
+# IDE config
+.idea
+
+# clion cmake builds
+cmake-build-debug
+cmake-build-release
+cmake-build-relwithdebinfo
+packaging/Output/*
+
+# Visual Studio 临时文件
+.vs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+*.user
+*.aps
+*.pdb
+*.pichash
+*.db
+*.opendb
+*.sdf
+*.ipch
+*.tlog
+*.idb
+*.lastbuildstate
+*.obj
+*.iobj
+*.ipdb
+*.log
+
+# 忽略所有编译输出的二进制文件（防止把调试版的垃圾传上去）
+Binaries/
+DerivedData/
+*.obj
+*.o
+*.pdb
+
+# 排除特定的构建结果文件夹（防止不同系统的编译冲突）
+build/
+out/
